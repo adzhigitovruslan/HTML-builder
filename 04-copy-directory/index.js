@@ -1,9 +1,9 @@
 
-const fs = require("fs");
-const { mkdir, readdir, rm, access, copyFile } = require("node:fs/promises");
-const path = require("path");
-const projectFolder = path.join(__dirname, "files-copy");
-const sourceFolder = path.join(__dirname, "files");
+const fs = require('fs');
+const { mkdir, readdir, rm, access, copyFile } = require('node:fs/promises');
+const path = require('path');
+const projectFolder = path.join(__dirname, 'files-copy');
+const sourceFolder = path.join(__dirname, 'files');
 
 function checkFileExists(file) {
   return access(file, fs.constants.F_OK)
